@@ -1,0 +1,79 @@
+/* Footer fixes para garantir que não apareça faixa preta */
+#footer {
+  background: transparent !important;
+  position: relative;
+  z-index: 5;
+  margin-bottom: 0;
+}
+
+#footer p {
+  background: rgba(0, 0, 0, 0.5); /* Um leve fundo escuro apenas no texto */
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-bottom: 50px; /* Espaço extra abaixo do footer */
+}
+
+/* Garantir que o conteúdo vai até o fim da página sem espaços */
+.content-area .content-area-inner section:last-child {
+  margin-bottom: 50px !important;
+}
+
+.content-area {
+  min-height: 100vh;
+}
+
+/* Estilos para o botão de WhatsApp */
+.whatsapp-button {
+  display: inline-block;
+  background-color: #25d366; /* Cor oficial do WhatsApp */
+  color: white;
+  font-weight: 600;
+  font-size: 1.8rem;
+  padding: 18px 32px;
+  border-radius: 50px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  margin: 20px auto 40px auto;
+  display: block;
+  max-width: 380px;
+  letter-spacing: 0.5px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.whatsapp-button:hover {
+  background-color: #20ba5c;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(37, 211, 102, 0.5);
+  color: white;
+}
+
+.whatsapp-button i {
+  font-size: 2.2rem;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+/* Ajustes responsivos para o botão */
+@media (max-width: 480px) {
+  .whatsapp-button {
+    font-size: 1.6rem;
+    padding: 15px 25px;
+    max-width: 90%;
+  }
+
+  .whatsapp-button i {
+    font-size: 1.8rem;
+  }
+}
+
+/* Estilo para a seção de contato */
+#contact {
+  text-align: center;
+}
+
+#contact h3.headline {
+  margin-bottom: 30px;
+}
